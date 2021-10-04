@@ -1,0 +1,38 @@
+.container-logo{
+    float:left;
+    width: 70px;
+}
+
+.container-logo img{
+    width: 100%;
+}
+
+.titulo-barra{
+    padding-right: 70px;
+}
+
+header > div {   
+    display: flex;
+    background-color:rgba(14, 149, 14, 0.876) ;
+    box-sizing: border-box;
+
+}
+
+.contenedor-botnes{
+    padding-left: inherit;
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root a{
+    text-decoration:  none;
+    color: inherit;
+}
+
+.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+    margin: auto;
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+
+    cursor: none;
+    font-size: 1.5rem !important;
+}

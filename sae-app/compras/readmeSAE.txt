@@ -1,0 +1,4 @@
+Mi proyecto apunta a una empresa que brinda servicio de riego y control de automatismo en distintas areas, como por ejemplo Hogar, complejos deportivos ,etc.
+es un ejemplo real porque estamos armando una empresa de este tipo y ya hemos realizado algun trabajo. A medida que voy terminando modulos voy ampliando la web y otros conceptos como es el SCADA / monitoreo WEB que lo empece a desarrolar junto con la cursada de JS.
+Se que no es el mejor ejemplo para hacer un carrito de compras, pero le busque la manera para poder integrar esta idea al proyecto de REact JS.
+aun quedan cosas por integrar, utilice componentes mui y algunos otros estilos que encontre por la Web para ir maquetando el sitio. 
