@@ -12,7 +12,7 @@ useEffect(()=>{
 },[])
 const resetCarro = () => {
     setCompra(0)
-    localStorage.setItem("carrito",compra)
+    localStorage.setItem("carrito",0)
     console.log(compra)
 }
     return(

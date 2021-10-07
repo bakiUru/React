@@ -32,6 +32,7 @@ const Servicios = (props) => {
 
 //Agrega al carrito
 const [servAdd, SetservAdd] = useState(1);
+const [servIdAdd, SetservIdAdd] = useState([]);
 
 useEffect(()=>{
 
@@ -40,12 +41,30 @@ useEffect(()=>{
 
 //guarda la cantidad de compras
 const shopp = () =>{
-    SetservAdd (servAdd + 1);
+    SetservIdAdd(servIdAdd.concat(props.id))
     console.log(servAdd);
-    localStorage.setItem("carrito",servAdd);
+    localStorage.setItem("Servcarrito",[servIdAdd]);
 }
 
+//Controla que no agregue mas servicios iguales
+const controlShopp = () => {
+    
+    shopp();
+    if(servIdAdd[0] !== null)
+    {
+        
+        //console.log(elementosCarrito)
+        if( servIdAdd.find(id => id === props.id))
+        alert("Ya agrego el servicio");
+        else{
+            alert("Servicio Agregado");
+            SetservAdd (servAdd + 1);
+            localStorage.setItem("carrito",servAdd);
+        }   
+        
+    }
 
+}
 
 //Control Cbox Instalacion
 const [Instalacion, setservInst] = React.useState(''); 
@@ -178,7 +197,7 @@ const servicios=JSON.parse(localStorage.getItem("Servicios"));
                             </Box>
                         </Item>
                         <Item>
-                        <Button variant="contained" onClick={shopp} endIcon={<AddShoppingCartIcon/>}>
+                        <Button variant="contained" onClick={controlShopp} endIcon={<AddShoppingCartIcon/>}>
                          Agregar Servicio
                         </Button>
                         </Item>

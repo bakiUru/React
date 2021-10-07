@@ -69,7 +69,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 
-export default function NavBar() {
+export default function NavBar({fixedScroll}) {
+ 
   const [categoria, setCategoria] = React.useState(
    JSON.parse(localStorage.getItem("Servicios"))
   );
